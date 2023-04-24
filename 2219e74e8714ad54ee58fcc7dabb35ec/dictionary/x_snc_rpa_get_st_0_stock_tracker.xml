@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fa4b63828754ad54ee58fcc7dabb351a" label="Stock Tracker" max_length="40" name="x_snc_rpa_get_st_0_stock_tracker" type="collection">
+        <element label="Change in Price" max_length="40" name="change_in_price" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Stock Price" max_length="40" name="stock_price" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Stock Symbol" max_length="40" name="stock_symbol" type="string"/>
+    </element>
+</database>

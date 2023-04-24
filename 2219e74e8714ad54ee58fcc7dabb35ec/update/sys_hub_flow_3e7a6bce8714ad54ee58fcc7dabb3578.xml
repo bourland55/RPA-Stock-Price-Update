@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>used from an unattended bot to send info back regarding a stock price</description>
+        <internal_name>stock_price_import_rpa</internal_name>
+        <label_cache>[{"name":"subflow.change_in_price","label":"Input➛Change in Price","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"caa6d4fc-5d6b-4694-8766-774bc5c72571"}},{"name":"subflow.current_price","label":"Input➛Current Price","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"51a441af-5378-4a35-8459-36b72623d330"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.__dont_treat_as_error__","label":"1 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.__action_status__","label":"1 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.table_name","label":"1 - Create Record➛Stock Tracker Table","reference":"x_snc_rpa_get_st_0_stock_tracker","reference_display":"Stock Tracker","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.record","label":"1 - Create Record➛Stock Tracker Record","reference":"x_snc_rpa_get_st_0_stock_tracker","reference_display":"Stock Tracker","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>ea6e630a8754ad54ee58fcc7dabb3520</master_snapshot>
+        <name>Stock Price Import RPA</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:33:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3e7a6bce8714ad54ee58fcc7dabb3578</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Stock Price Import RPA</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="RPA Get Stock Price" source="x_snc_rpa_get_st_0">2219e74e8714ad54ee58fcc7dabb35ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name>sys_hub_flow_3e7a6bce8714ad54ee58fcc7dabb3578</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3e7a6bce8714ad54ee58fcc7dabb3578^sys_idNOT IN7a7a6bce8714ad54ee58fcc7dabb3579"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3e7a6bce8714ad54ee58fcc7dabb3578</id>
+        <name>Stock Price Import RPA</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:33:22</sys_created_on>
+        <sys_id>7a7a6bce8714ad54ee58fcc7dabb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:33:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7a7a6bce8714ad54ee58fcc7dabb3579"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3e7a6bce8714ad54ee58fcc7dabb3578^sys_idNOT IN003e2bc68754ad54ee58fcc7dabb35ad,003e6b868754ad54ee58fcc7dabb351c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=caa6d4fc-5d6b-4694-8766-774bc5c72571</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>change_in_price</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Change in Price</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stock Price Import RPA">3e7a6bce8714ad54ee58fcc7dabb3578</model>
+        <model_id>3e7a6bce8714ad54ee58fcc7dabb3578</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3e7a6bce8714ad54ee58fcc7dabb3578</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>003e2bc68754ad54ee58fcc7dabb35ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:49:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=51a441af-5378-4a35-8459-36b72623d330</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_price</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Current Price</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stock Price Import RPA">3e7a6bce8714ad54ee58fcc7dabb3578</model>
+        <model_id>3e7a6bce8714ad54ee58fcc7dabb3578</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3e7a6bce8714ad54ee58fcc7dabb3578</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>003e6b868754ad54ee58fcc7dabb351c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:49:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=3e7a6bce8714ad54ee58fcc7dabb3578^sys_idNOT IN8c3e2bc68754ad54ee58fcc7dabb35b7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Price Import RPA">3e7a6bce8714ad54ee58fcc7dabb3578</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>8c3e2bc68754ad54ee58fcc7dabb35b7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+        <ui_id>d4aed809-961b-4a0e-99fd-28da9822c002</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8c3e2bc68754ad54ee58fcc7dabb35b7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8c3e2bc68754ad54ee58fcc7dabb35b7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>5c3e2bc68754ad54ee58fcc7dabb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:49:35</sys_updated_on>
+        <value>x_snc_rpa_get_st_0_stock_tracker</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8c3e2bc68754ad54ee58fcc7dabb35b7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8c3e2bc68754ad54ee58fcc7dabb35b7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>143e2bc68754ad54ee58fcc7dabb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:49:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8c3e2bc68754ad54ee58fcc7dabb35b7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>d83e2bc68754ad54ee58fcc7dabb35df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:49:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>stock_price={{subflow.current_price}}^stock_symbol=NOW^change_in_price={{subflow.change_in_price}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8c3e2bc68754ad54ee58fcc7dabb35b7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8c3e2bc68754ad54ee58fcc7dabb35b7"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3e7a6bce8714ad54ee58fcc7dabb3578^sys_idNOT IN403e2bc68754ad54ee58fcc7dabb35ac,843e2bc68754ad54ee58fcc7dabb35af"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current_price</element>
+        <help/>
+        <hint/>
+        <label>Current Price</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3e7a6bce8714ad54ee58fcc7dabb3578</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>403e2bc68754ad54ee58fcc7dabb35ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RPA Get Stock Price" source="x_snc_rpa_get_st_0">2219e74e8714ad54ee58fcc7dabb35ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:49:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>change_in_price</element>
+        <help/>
+        <hint/>
+        <label>Change in Price</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3e7a6bce8714ad54ee58fcc7dabb3578</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:49:35</sys_created_on>
+        <sys_id>843e2bc68754ad54ee58fcc7dabb35af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RPA Get Stock Price" source="x_snc_rpa_get_st_0">2219e74e8714ad54ee58fcc7dabb35ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:49:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3e7a6bce8714ad54ee58fcc7dabb3578"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3e7a6bce8714ad54ee58fcc7dabb3578^sys_idNOT IN766ea30a8754ad54ee58fcc7dabb351c"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@19abe5f</plan>
+        <plan_id display_value="Stock Price Import RPA">3e7a6bce8714ad54ee58fcc7dabb3578</plan_id>
+        <snapshot>ea6e630a8754ad54ee58fcc7dabb3520</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>766ea30a8754ad54ee58fcc7dabb351c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>used from an unattended bot to send info back regarding a stock price</description>
+        <internal_name>stock_price_import_rpa</internal_name>
+        <label_cache>[{"name":"subflow.change_in_price","label":"Input➛Change in Price","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"caa6d4fc-5d6b-4694-8766-774bc5c72571"}},{"name":"subflow.current_price","label":"Input➛Current Price","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"51a441af-5378-4a35-8459-36b72623d330"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.__dont_treat_as_error__","label":"1 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.__action_status__","label":"1 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.table_name","label":"1 - Create Record➛Stock Tracker Table","reference":"x_snc_rpa_get_st_0_stock_tracker","reference_display":"Stock Tracker","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4aed809-961b-4a0e-99fd-28da9822c002.record","label":"1 - Create Record➛Stock Tracker Record","reference":"x_snc_rpa_get_st_0_stock_tracker","reference_display":"Stock Tracker","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Stock Price Import RPA</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Stock Price Import RPA">3e7a6bce8714ad54ee58fcc7dabb3578</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ea6e630a8754ad54ee58fcc7dabb3520</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:34</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ea6e630a8754ad54ee58fcc7dabb3520^sys_idNOT INaa6e630a8754ad54ee58fcc7dabb3521"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ea6e630a8754ad54ee58fcc7dabb3520</id>
+        <name>Stock Price Import RPA</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:34</sys_created_on>
+        <sys_id>aa6e630a8754ad54ee58fcc7dabb3521</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:34</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=aa6e630a8754ad54ee58fcc7dabb3521"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ea6e630a8754ad54ee58fcc7dabb3520^sys_idNOT IN226e630a8754ad54ee58fcc7dabb3523,366e630a8754ad54ee58fcc7dabb359c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=51a441af-5378-4a35-8459-36b72623d330</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_price</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Current Price</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stock Price Import RPA">ea6e630a8754ad54ee58fcc7dabb3520</model>
+        <model_id>ea6e630a8754ad54ee58fcc7dabb3520</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ea6e630a8754ad54ee58fcc7dabb3520</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:34</sys_created_on>
+        <sys_id>226e630a8754ad54ee58fcc7dabb3523</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=caa6d4fc-5d6b-4694-8766-774bc5c72571</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>change_in_price</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Change in Price</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Stock Price Import RPA">ea6e630a8754ad54ee58fcc7dabb3520</model>
+        <model_id>ea6e630a8754ad54ee58fcc7dabb3520</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ea6e630a8754ad54ee58fcc7dabb3520</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:34</sys_created_on>
+        <sys_id>366e630a8754ad54ee58fcc7dabb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=ea6e630a8754ad54ee58fcc7dabb3520^sys_idNOT INb66ea30a8754ad54ee58fcc7dabb3511"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Stock Price Import RPA">ea6e630a8754ad54ee58fcc7dabb3520</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:35</sys_created_on>
+        <sys_id>b66ea30a8754ad54ee58fcc7dabb3511</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+        <ui_id>d4aed809-961b-4a0e-99fd-28da9822c002</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b66ea30a8754ad54ee58fcc7dabb3511"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b66ea30a8754ad54ee58fcc7dabb3511</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:35</sys_created_on>
+        <sys_id>f66ea30a8754ad54ee58fcc7dabb3513</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+        <value>x_snc_rpa_get_st_0_stock_tracker</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b66ea30a8754ad54ee58fcc7dabb3511"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b66ea30a8754ad54ee58fcc7dabb3511</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:35</sys_created_on>
+        <sys_id>be6ea30a8754ad54ee58fcc7dabb3512</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b66ea30a8754ad54ee58fcc7dabb3511</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:35</sys_created_on>
+        <sys_id>766ea30a8754ad54ee58fcc7dabb3513</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>stock_price={{subflow.current_price}}^stock_symbol=NOW^change_in_price={{subflow.change_in_price}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b66ea30a8754ad54ee58fcc7dabb3511"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b66ea30a8754ad54ee58fcc7dabb3511"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ea6e630a8754ad54ee58fcc7dabb3520^sys_idNOT INba6e630a8754ad54ee58fcc7dabb35eb,fa6e630a8754ad54ee58fcc7dabb3598"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>change_in_price</element>
+        <help/>
+        <hint/>
+        <label>Change in Price</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ea6e630a8754ad54ee58fcc7dabb3520</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:35</sys_created_on>
+        <sys_id>ba6e630a8754ad54ee58fcc7dabb35eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RPA Get Stock Price" source="x_snc_rpa_get_st_0">2219e74e8714ad54ee58fcc7dabb35ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current_price</element>
+        <help/>
+        <hint/>
+        <label>Current Price</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ea6e630a8754ad54ee58fcc7dabb3520</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-11 20:50:34</sys_created_on>
+        <sys_id>fa6e630a8754ad54ee58fcc7dabb3598</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="RPA Get Stock Price" source="x_snc_rpa_get_st_0">2219e74e8714ad54ee58fcc7dabb35ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-11 20:50:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ea6e630a8754ad54ee58fcc7dabb3520"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3e7a6bce8714ad54ee58fcc7dabb3578</sys_id>
+        <latest_snapshot>ea6e630a8754ad54ee58fcc7dabb3520</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>

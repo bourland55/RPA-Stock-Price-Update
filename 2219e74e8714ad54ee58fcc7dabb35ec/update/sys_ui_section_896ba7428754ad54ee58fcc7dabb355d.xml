@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="896ba7428754ad54ee58fcc7dabb355d" sys_domain="global" table="x_snc_rpa_get_st_0_stock_tracker" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 22:49:12</sys_created_on>
+            <sys_id>ebe569c887d9ed107eabca25dabb352a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_rpa_get_st_0_stock_tracker" sys_domain="global" view="Default view">896ba7428754ad54ee58fcc7dabb355d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 22:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stock_symbol</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 22:49:12</sys_created_on>
+            <sys_id>27e569c887d9ed107eabca25dabb352b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_rpa_get_st_0_stock_tracker" sys_domain="global" view="Default view">896ba7428754ad54ee58fcc7dabb355d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 22:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>change_in_price</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 22:49:12</sys_created_on>
+            <sys_id>2be569c887d9ed107eabca25dabb352b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_rpa_get_st_0_stock_tracker" sys_domain="global" view="Default view">896ba7428754ad54ee58fcc7dabb355d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 22:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 22:49:12</sys_created_on>
+            <sys_id>2fe569c887d9ed107eabca25dabb352b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_rpa_get_st_0_stock_tracker" sys_domain="global" view="Default view">896ba7428754ad54ee58fcc7dabb355d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 22:49:12</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 22:49:12</sys_created_on>
+            <sys_id>23e569c887d9ed107eabca25dabb352c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_rpa_get_st_0_stock_tracker" sys_domain="global" view="Default view">896ba7428754ad54ee58fcc7dabb355d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 22:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stock_price</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 22:49:12</sys_created_on>
+            <sys_id>27e569c887d9ed107eabca25dabb352c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_rpa_get_st_0_stock_tracker" sys_domain="global" view="Default view">896ba7428754ad54ee58fcc7dabb355d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 22:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_snc_navy_corre_0_current_price</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-23 22:49:12</sys_created_on>
+            <sys_id>2be569c887d9ed107eabca25dabb352c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_rpa_get_st_0_stock_tracker" sys_domain="global" view="Default view">896ba7428754ad54ee58fcc7dabb355d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-23 22:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_rpa_get_st_0_stock_tracker</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-01-11 20:37:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>896ba7428754ad54ee58fcc7dabb355d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_rpa_get_st_0_stock_tracker</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="RPA Get Stock Price" source="x_snc_rpa_get_st_0">2219e74e8714ad54ee58fcc7dabb35ec</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="RPA Get Stock Price">2219e74e8714ad54ee58fcc7dabb35ec</sys_scope>
+            <sys_update_name>sys_ui_section_896ba7428754ad54ee58fcc7dabb355d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-01-11 20:37:22</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
